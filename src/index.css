@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
 :root {
+  /* Tokens */
+  --background: oklch(0.1 0.004 90);
+  --gold: oklch(0.86 0.05 90);
+  --health: oklch(0.34 0.08 30);
+  --mana: oklch(0.34 0.05 240);
+
   background-image: url("assets/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+@theme {
+  --color-gold: var(--gold);
+  --color-health: var(--health);
+  --color-mana: var(--mana)
 }
