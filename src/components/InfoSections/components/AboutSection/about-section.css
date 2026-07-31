@@ -1,0 +1,10 @@
+.about-section-card {
+    border: 1px solid color-mix(in oklab, var(--gold) 26%, transparent);
+    background: color-mix(in oklab, black 45%, transparent);
+    backdrop-filter: blur(3px);
+
+    &:hover {
+        border-color: color-mix(in oklab, var(--gold) 55%, transparent);
+        background: color-mix(in oklab, black 58%, transparent);
+    }
+}
