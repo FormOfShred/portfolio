@@ -5,8 +5,8 @@ import "./navigation-menu.css";
 const MENU: { id: string, label: string, icon: string}[] = [
     { id: "about", label: "About", icon: "fa-solid fa-user"},
     { id: "experience", label: "Experience", icon: "fa-solid fa-briefcase"},
-    { id: "contact", label: "Contact", icon: "fa-solid fa-phone"},
-    { id: "tools", label: "Tools", icon: "fa-solid fa-wrench"}
+    { id: "tools", label: "Tools", icon: "fa-solid fa-wrench"},
+    { id: "contact", label: "Contact", icon: "fa-solid fa-phone"}
 ]
 
 const NavigationMenu = ({activeSection, setActiveSection}: {activeSection: string, setActiveSection: (section: string) => void;}) => {
