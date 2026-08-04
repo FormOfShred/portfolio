@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle"
+import resume from "../../../../assets/resume.pdf";
 
 import "./about-section.css";
 
@@ -32,7 +33,7 @@ const AboutSection = () => {
                 <div className="mt-10 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-4">
                     <Card title="Experience" subtitle="2 years"/>
                     <Card title="Field" subtitle="Software Development"/>
-                    <Card title="CV" subtitle={<a href="">Download Resume</a>}/>
+                    <Card title="CV" subtitle={<a href={resume} download="robyn-hamelryck-resume.pdf">Download Resume</a>}/>
                 </div>
             </div>
         </div>
