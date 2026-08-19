@@ -2,28 +2,5 @@
 
 :root {
   /* Tokens */
-  --background: oklch(0.1 0.004 90);
-  --gold: oklch(0.86 0.05 90);
-  --health: oklch(0.34 0.08 30);
-  --mana: oklch(0.34 0.05 240);
-  --gold-dim: oklch(0.78 0.04 90);
-  --gold-light: oklch(0.95 0.03 90);
-
-  background-image: url("assets/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-@theme {
-  --color-gold: var(--gold);
-  --color-health: var(--health);
-  --color-mana: var(--mana);
-  --color-background: var(--background);
-  --color-gold-dim: var(--gold-dim);
-  --color-gold-light: var(--gold-light)
-}
-
-.app {
-  background-color: color-mix(in oklab, var(--background) 50%, transparent);
+  --background: white;
 }
