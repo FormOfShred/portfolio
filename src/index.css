@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 
 :root {
   /* Tokens */
-  --background: white;
+  --background: oklch(0.985 0 285);
+  --purple: oklch(0.5413 0.2466 293.01);
+  --purple-light: oklch(0.6379 0.0937 293.01);
+  --purple-dark: oklch(0.2827 0.1351 291.09);
+
+  background-color: var(--background);
+
+  font-family: "Syne", sans-serif;
 }

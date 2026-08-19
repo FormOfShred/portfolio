@@ -1,0 +1,36 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  border-bottom: 1px solid color-mix(var(--purple-light) 40%, white);
+
+  position: sticky;
+}
+
+.Title {
+  color: var(--purple-dark);
+  font-size: 1.5rem;
+}
+
+.Trigger {
+  color: var(--purple-light);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--purple);
+  }
+}
+
+.Button {
+  padding: 5px 10px;
+
+  background-color: var(--purple);
+  color: white;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
