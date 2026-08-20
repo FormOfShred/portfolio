@@ -1,3 +1,4 @@
+import ContactCard from "./components/ContactCard";
 import HeroCard from "./components/HeroCard";
 import TechStackCard from "./components/TechStackCard";
 
@@ -8,6 +9,7 @@ const Masonry = () => {
     >
       <HeroCard />
       <TechStackCard />
+      <ContactCard />
     </div>
   )
 }
