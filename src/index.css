@@ -7,6 +7,7 @@
   --purple: oklch(0.5413 0.2466 293.01);
   --purple-light: oklch(0.6379 0.0937 293.01);
   --purple-dark: oklch(0.2827 0.1351 291.09);
+  --shadow: oklch(0 0 0 / 10%);
 
   background-color: var(--background);
 
