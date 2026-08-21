@@ -8,6 +8,11 @@
   border-bottom: 1px solid color-mix(var(--purple-light) 40%, white);
 
   position: sticky;
+  top: 0;
+
+  z-index: 50;
+
+  background-color: color-mix(var(--purple) 5%, white);
 }
 
 .Title {

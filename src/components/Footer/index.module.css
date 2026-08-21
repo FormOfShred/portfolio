@@ -1,0 +1,25 @@
+.Footer {
+  padding: calc(var(--spacing) * 10) calc(var(--spacing) * 6);
+
+  border-top: 1px solid color-mix(var(--purple-light) 40%, white);
+
+  background-color: color-mix(var(--purple) 5%, white);
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 6);
+
+  max-width: 72rem;
+
+  margin: auto;
+}
+
+@media (width >= 48rem) {
+    .Content {
+        flex-direction: row;
+    }
+}
