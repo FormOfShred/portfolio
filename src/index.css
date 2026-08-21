@@ -13,3 +13,9 @@
 
   font-family: "Syne", sans-serif;
 }
+
+@theme {
+  --color-purple: var(--purple);
+  --color-purple-light: var(--purple-light);
+  --color-purple-dark: var(--purple-dark);
+}

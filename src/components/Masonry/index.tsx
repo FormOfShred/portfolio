@@ -2,7 +2,10 @@ import AvailabilityCard from "./components/AvailabilityCard";
 import ContactCard from "./components/ContactCard";
 import HeroCard from "./components/HeroCard";
 import LocationCard from "./components/LocationCard";
+import ProjectCard from "./components/ProjectCard";
 import TechStackCard from "./components/TechStackCard";
+
+import portfolio_image from "../../assets/project_portfolio.png";
 
 const Masonry = () => {
   return (
@@ -13,6 +16,18 @@ const Masonry = () => {
       <TechStackCard />
       <LocationCard />
       <AvailabilityCard />
+      <ProjectCard 
+        title="TaskFlow" 
+        description="A playful project management app with real-time collaboration, drag-and-drop boards, and a purple-first UI." 
+        tags={["React", "TypeScript", "Vite", "Tailwind", "CSS"]}
+        links={
+          [
+            {title: "website", link: "/"},
+            {title: "github", link: "https://github.com/FormOfShred/portfolio"}
+          ]
+        }
+        image={portfolio_image}
+      />
       <ContactCard />
     </div>
   )

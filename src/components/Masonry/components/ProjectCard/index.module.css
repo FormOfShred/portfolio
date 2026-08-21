@@ -1,0 +1,73 @@
+.Card {
+  position: relative;
+
+  background: linear-gradient(
+    90deg,
+    color-mix(var(--purple-light) 20%, white),
+    color-mix(var(--purple-light) 10%, white)
+  );
+
+  padding: calc(var(--spacing) * 8);
+
+  border: 1px solid color-mix(var(--purple-light) 30%, transparent);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  grid-row: span 2 / span 2;
+  grid-column: span 12 / span 12;
+}
+
+.Tag {
+  border: 1px solid color-mix(var(--purple-light) 40%, transparent);
+  border-radius: 5px;
+
+  background-color: color-mix(var(--purple-light) 20%, transparent);
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+
+  padding: var(--spacing);
+  padding: calc(var(--spacing) * 2);
+}
+
+.Link {
+  color: var(--purple-dark);
+
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+
+  display: flex;
+  gap: 3px;
+  align-items: center;
+
+  &:hover {
+    color: var(--purple)
+  }
+}
+
+.Image {
+  position: relative;
+  z-index: 10;
+
+  transition-duration: 500ms;
+  transition-property: transform, translate, scale, rotate;
+
+  box-shadow: 0 25px 50px -12px var(--shadow);
+
+  margin-top: calc(var(--spacing) * 4);
+
+  border: 1px solid color-mix(var(--purple-light) 20%, transparent);
+  border-radius: 5px;
+}
+
+@media (width >= 64rem) {
+    .Card {
+        grid-column: span 5 / span 5;
+    }
+}
