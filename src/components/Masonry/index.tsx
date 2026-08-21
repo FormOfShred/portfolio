@@ -17,8 +17,8 @@ const Masonry = () => {
       <LocationCard />
       <AvailabilityCard />
       <ProjectCard 
-        title="TaskFlow" 
-        description="A playful project management app with real-time collaboration, drag-and-drop boards, and a purple-first UI." 
+        title="Portfolio" 
+        description="A personal portfolio showcasing who I am, the projects I’ve built, and ways to get in touch with me." 
         tags={["React", "TypeScript", "Vite", "Tailwind", "CSS"]}
         links={
           [
