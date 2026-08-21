@@ -1,0 +1,33 @@
+.Card {
+  padding: calc(var(--spacing) * 6);
+
+  border: 1px solid color-mix(var(--purple-light) 40%, transparent);
+
+  border-radius: 10px;
+
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  grid-row: span 1 / span 1;
+  grid-column: span 6 / span 6;
+}
+
+.Title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--purple);
+
+  letter-spacing: 0.05em;
+}
+
+@media (width >= 64rem) {
+    .Card {
+        grid-column: span 2 / span 2;
+    }
+}

@@ -1,3 +1,4 @@
+import AvailabilityCard from "./components/AvailabilityCard";
 import ContactCard from "./components/ContactCard";
 import HeroCard from "./components/HeroCard";
 import LocationCard from "./components/LocationCard";
@@ -11,6 +12,7 @@ const Masonry = () => {
       <HeroCard />
       <TechStackCard />
       <LocationCard />
+      <AvailabilityCard />
       <ContactCard />
     </div>
   )
