@@ -1,9 +1,0 @@
-.navigation-panel {
-    background: linear-gradient(
-    90deg,
-    var(--background) 0%,
-    color-mix(in oklab, var(--background) 97%, transparent) 62%,
-    color-mix(in oklab, var(--background) 55%, transparent) 84%,
-    transparent 100%
-  );
-}

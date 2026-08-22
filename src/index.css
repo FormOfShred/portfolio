@@ -1,29 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import "tailwindcss";
 
 :root {
   /* Tokens */
-  --background: oklch(0.1 0.004 90);
-  --gold: oklch(0.86 0.05 90);
-  --health: oklch(0.34 0.08 30);
-  --mana: oklch(0.34 0.05 240);
-  --gold-dim: oklch(0.78 0.04 90);
-  --gold-light: oklch(0.95 0.03 90);
+  --background: oklch(0.985 0 285);
+  --purple: oklch(0.5413 0.2466 293.01);
+  --purple-light: oklch(0.6379 0.0937 293.01);
+  --purple-dark: oklch(0.2827 0.1351 291.09);
+  --shadow: oklch(0 0 0 / 10%);
 
-  background-image: url("assets/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: var(--background);
+
+  font-family: "Syne", sans-serif;
 }
 
 @theme {
-  --color-gold: var(--gold);
-  --color-health: var(--health);
-  --color-mana: var(--mana);
-  --color-background: var(--background);
-  --color-gold-dim: var(--gold-dim);
-  --color-gold-light: var(--gold-light)
-}
-
-.app {
-  background-color: color-mix(in oklab, var(--background) 50%, transparent);
+  --color-purple: var(--purple);
+  --color-purple-light: var(--purple-light);
+  --color-purple-dark: var(--purple-dark);
 }

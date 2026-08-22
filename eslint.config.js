@@ -24,6 +24,7 @@ export default defineConfig([
     },
     rules: {
       "unused-imports/no-unused-imports": "error",
+      "indent": ["error", 2]
     }
   },
 ])

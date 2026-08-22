@@ -1,30 +1,15 @@
-import { useEffect, useState } from "react"
-import NavigationPanel from "./components/NavigationPanel/NavigationPanel"
-import InfoSections from "./components/InfoSections/InfoSections"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Masonry from "./components/Masonry"
 
 function App() {
-  const [activeSection, setActiveSection] = useState<string>("about")
-  const [bigScreen, setBigScreen] = useState<boolean>(window.innerWidth > 1200);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setBigScreen(window.innerWidth > 1200);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-
   return (
-    <div className="flex app">
-      {bigScreen && <NavigationPanel activeSection={activeSection} setActiveSection={setActiveSection} />}
-      <InfoSections activeSection={activeSection} bigScreen={bigScreen} />
+    <div>
+      <Header />
+      <div className="flex flex-col items-center justify-center px-6 py-12 lg:px-12 lg:py-16">
+        <Masonry />
+      </div>
+      <Footer />
     </div>
   )
 }
