@@ -1,5 +1,7 @@
 import { Button } from "@base-ui/react/button";
 
+import resume from "../../../../assets/resume.pdf";
+
 import styles from "./index.module.css";
 
 const ContactCard = () => {
@@ -23,7 +25,7 @@ const ContactCard = () => {
           Get in touch
           </Button>
         </a>
-        <a>
+        <a href={resume} target="_blank">
           <Button
             className={styles.Resume}
           >
