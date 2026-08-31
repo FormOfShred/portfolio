@@ -22,7 +22,7 @@ const Masonry = () => {
         tags={["React", "TypeScript", "Vite", "Tailwind", "CSS"]}
         links={
           [
-            {title: "website", link: "/"},
+            {title: "website", link: "#"},
             {title: "github", link: "https://github.com/FormOfShred/portfolio"}
           ]
         }
