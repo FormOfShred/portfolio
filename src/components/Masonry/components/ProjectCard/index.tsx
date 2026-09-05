@@ -9,7 +9,30 @@ type ProjectCardProps = {
   image: string;
 }
 
+const PreviewImage = ({ websiteLink, image }: { websiteLink?: {title: string, link: string}, image: string }) => {
+  return (
+    websiteLink ? 
+      <a
+        href={websiteLink.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          className={classNames(
+            styles.Image,
+            "aspect-video translate-y-2 group-hover:translate-y-0"
+          )}
+          src={image}
+        />
+      </a>
+      : 
+      <img className={classNames(styles.Image, "aspect-video translate-y-2 group-hover:translate-y-0")} src={image} />
+  )
+}
+
 const ProjectCard = ({title, description, tags, links, image}: ProjectCardProps) => {
+  const websiteLink = links?.find(({ title }) => title.toLowerCase() === "website");
+
   return (
     <div
       id="work"
@@ -44,7 +67,7 @@ const ProjectCard = ({title, description, tags, links, image}: ProjectCardProps)
           ))}
         </div>}
       </div>
-      <img className={classNames(styles.Image, "aspect-video translate-y-2 group-hover:translate-y-0")} src={image} />
+      <PreviewImage websiteLink={websiteLink} image={image} />
     </div>
   )
 };

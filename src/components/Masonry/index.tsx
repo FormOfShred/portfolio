@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import TechStackCard from "./components/TechStackCard";
 
 import portfolio_image from "../../assets/project_portfolio.png";
+import releastiary_image from "../../assets/project_releastiary.png";
 
 const Masonry = () => {
   return (
@@ -29,6 +30,18 @@ const Masonry = () => {
         image={portfolio_image}
       />
       <ContactCard />
+      <ProjectCard 
+        title="Releastiary" 
+        description="A website on which you can see which video games are released on a given day." 
+        tags={["React", "TypeScript", "Vite", "Tailwind", "shadcn", "Express"]}
+        links={
+          [
+            {title: "website", link: "https://releastiary.onrender.com/"},
+            {title: "github", link: "https://github.com/FormOfShred/releastiary"}
+          ]
+        }
+        image={releastiary_image}
+      />
     </div>
   )
 }
