@@ -7,6 +7,7 @@ import TechStackCard from "./components/TechStackCard";
 
 import portfolio_image from "../../assets/project_portfolio.png";
 import releastiary_image from "../../assets/project_releastiary.png";
+import WorkHistoryCard from "./components/WorkHistoryCard/WorkHistoryCard";
 
 const Masonry = () => {
   return (
@@ -30,6 +31,7 @@ const Masonry = () => {
         image={portfolio_image}
       />
       <ContactCard />
+      <WorkHistoryCard />
       <ProjectCard 
         title="Releastiary" 
         description="A website on which you can see which video games are released on a given day." 

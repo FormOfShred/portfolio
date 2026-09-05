@@ -1,0 +1,25 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  padding: calc(var(--spacing) * 8);
+
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(var(--purple-light) 40%, white);
+
+  overflow: hidden;
+
+  grid-row: span 2 / span 2;
+  grid-column: span 12 / span 12;
+}
+
+@media (min-width: 64rem) {
+  .Card {
+    grid-column: span 7 / span 7;
+
+    padding: calc(var(--spacing) * 12);
+  }
+}
