@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/geist";
-
-@custom-variant dark (&:is(.dark *));
 
 :root {
+  --background: oklch(0.2882 0.0221 277.51);
+  --foreground: oklch(0.9775 0.0079 106.55);
+
+  --card: oklch(0.3431 0.0333 279.8);
+
+  --ring: oklch(0.1493 0.0216 278.91);
+
+  --border: oklch(0.1493 0.0216 278.91);
+
+  --primary-foreground: oklch(0.8688 0.2173 135.44);
+
+  --secondary-foreground: oklch(0.742 0.1485 301.88);
+
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Oxanium", sans-serif;
+}
+
+/* :root {
 
     --background: oklch(1 0 0);
 
@@ -70,10 +88,7 @@
     --sidebar-border: oklch(0.922 0 0);
 
     --sidebar-ring: oklch(0.708 0 0);
-}
-
-@media (prefers-color-scheme: dark) {
-}
+} */
 
 @theme inline {
 
@@ -156,16 +171,6 @@
     --radius-3xl: calc(var(--radius) * 2.2);
 
     --radius-4xl: calc(var(--radius) * 2.6);
-}
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-    }
-  body {
-    @apply bg-background text-foreground;
-    }
-  html {
-    @apply font-sans;
-    }
+    --shadow-md: 4px 4px 0 0 var(--border);
 }
