@@ -1,9 +1,18 @@
 import { ProfileCard } from "./features/ProfileCard/profile-card";
+import { ProfileSideBar } from "./features/ProfileSideBar/profile-side-bar";
 
 function App() {
 
   return (
-    <ProfileCard />
+    <div className="m-2">
+      <ProfileCard />
+      <div className="sm:grid sm:grid-cols-4 pt-2 gap-2">
+        <ProfileSideBar />
+        <div className="col-span-3">selected page will be here</div>
+
+        
+      </div>
+    </div>
   )
 }
 

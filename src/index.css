@@ -8,6 +8,8 @@
   --background: oklch(0.2882 0.0221 277.51);
   --foreground: oklch(0.9775 0.0079 106.55);
 
+  --muted: oklch(0.2507 0.021 276.73);
+
   --card: oklch(0.3431 0.0333 279.8);
 
   --ring: oklch(0.1493 0.0216 278.91);
