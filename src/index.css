@@ -175,4 +175,6 @@
     --radius-4xl: calc(var(--radius) * 2.6);
 
     --shadow-md: 4px 4px 0 0 var(--border);
+
+    --shadow-lg: 6px 6px 0 0 var(--border);
 }
