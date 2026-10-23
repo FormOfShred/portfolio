@@ -1,5 +1,6 @@
 import { ProfileCard } from "./features/ProfileCard/profile-card";
 import { ProfileSideBar } from "./features/ProfileSideBar/profile-side-bar";
+import { ProfileSocials } from "./features/ProfileSocials/profile-socials";
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
         <ProfileSideBar />
         <div className="col-span-3">selected page will be here</div>
 
-        
+        <ProfileSocials />
       </div>
     </div>
   )
