@@ -1,26 +1,43 @@
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { ProfileCard } from "./features/ProfileCard/profile-card";
 import { ProfileGifs } from "./features/ProfileGifs/profile-gifs";
 import { ProfileSideBar } from "./features/ProfileSideBar/profile-side-bar";
 import { ProfileSocials } from "./features/ProfileSocials/profile-socials";
 import { Projects } from "./features/ProfileSections/Projects/projects";
+import { History } from "./features/ProfileSections/History/history";
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState<ReactNode>(<Projects />)
+  const [selectedSection, setSelectedSection] = useState("Projects");
+
+  const renderSection = () => {
+    switch (selectedSection) {
+      case "Projects":
+        return <Projects />;
+      case "History":
+        return <History />;
+      default:
+        return <Projects />;
+    }
+  };
 
   return (
     <div className="m-2">
       <ProfileCard />
+
       <div className="flex flex-col sm:grid sm:grid-cols-4 pt-2 gap-2">
         <div className="flex flex-col gap-2">
-          <ProfileSideBar setSelectedSection={setSelectedSection}/>
+          <ProfileSideBar
+            selectedSection={selectedSection}
+            setSelectedSection={setSelectedSection}
+          />
           <ProfileSocials />
           <ProfileGifs />
         </div>
-        <div className="col-span-3">{ selectedSection }</div>
+
+        <div className="col-span-3">{renderSection()}</div>
       </div>
     </div>
-  )
+  );
 }
 
 export default App
