@@ -5,6 +5,7 @@ import { ProfileSideBar } from "./features/ProfileSideBar/profile-side-bar";
 import { ProfileSocials } from "./features/ProfileSocials/profile-socials";
 import { Projects } from "./features/ProfileSections/Projects/projects";
 import { History } from "./features/ProfileSections/History/history";
+import { Updates } from "./features/ProfileSections/Updates/updates";
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("Projects");
@@ -15,6 +16,8 @@ function App() {
         return <Projects />;
       case "History":
         return <History />;
+      case "Updates":
+        return <Updates />;
       default:
         return <Projects />;
     }
