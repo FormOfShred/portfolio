@@ -1,6 +1,7 @@
 import { Card, CardHeader } from "@/components/ui/card"
 import { Item, ItemActions, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
 import { ChevronRightIcon, FolderGit2 } from "lucide-react"
+import portfolio from "../../../assets/project-images/portfolio.png";
 
 type ProjectItemProps = {
   title: string;
@@ -12,7 +13,7 @@ type ProjectItemProps = {
 const PROJECTS: ProjectItemProps[] = [
   {
     title: "Portfolio",
-    image: "src/assets/project-images/portfolio.png",
+    image: portfolio,
     subtitle: "Personal portfolio made with a neobrutalist style.",
     link: "https://formofshred.github.io/portfolio/"
   }
