@@ -16,7 +16,7 @@ export const ProfileGifs = () => {
         <img src={malenia} className="max-w-30" />
         <img src={initialD} className="max-w-22" />
         <img src={pinkpanthress} className="max-w-25" />
-        <img src={kompany} className="max-w-18" />
+        <img src={kompany} className="max-w-25" />
       </CardContent>
     </Card>
   )
